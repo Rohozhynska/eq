@@ -3,9 +3,9 @@ const bNum = prompt('Enter b');
 const cNum = prompt('Enter c');
 
 function findingDescr(aNum, bNum, cNum) {
- return bNum * bNum - 4 * aNum * cNum
+ return bNum * bNum - 4 * aNum * cNum;
 }
-let descr = findingDescr(aNum, bNum, cNum)
+let descr = findingDescr(aNum, bNum, cNum);
 
 function solvEq(bNum, descr, aNum) {
  if (descr == 0) {
