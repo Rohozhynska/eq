@@ -17,7 +17,7 @@ const cNum = prompt('Enter c');
    alert('x1 = ' + xFirst + ' x2 = ' + xSecond);
   }
  }
-let res=solvEq(bNum, descr, aNum, xSingle, xFirst, xSecond);
+solvEq(bNum, descr, aNum, xSingle, xFirst, xSecond);
 
 
 
