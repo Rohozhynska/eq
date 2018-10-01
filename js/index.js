@@ -2,12 +2,8 @@ const aNum = prompt('Enter a');
 const bNum = prompt('Enter b');
 const cNum = prompt('Enter c');
 
-function findingDescr(aNum, bNum, cNum) {
- return bNum * bNum - 4 * aNum * cNum;
-}
-let descr = findingDescr(aNum, bNum, cNum);
-
-function solvEq(bNum, descr, aNum) {
+function solvEq(bNum, aNum) {
+ descr = findingDescr(aNum, bNum, cNum);
  if (descr === 0) {
   const xSingle = ((-bNum + Math.sqrt(descr)) / (2 * aNum));
   return xSingle;
@@ -21,5 +17,9 @@ function solvEq(bNum, descr, aNum) {
   return 'x1 = ' + xFirst + ' x2 = ' + xSecond;
  }
 }
-let res = solvEq(bNum, descr, aNum);
+
+function findingDescr(aNum, bNum, cNum) {
+ return bNum * bNum - 4 * aNum * cNum;
+}
+let res = solvEq(bNum, aNum);
 alert(res);
