@@ -3,7 +3,7 @@ const bNum = prompt('Enter b');
 const cNum = prompt('Enter c');
 
 function solvEq(bNum, aNum) {
- descr = findingDescr(aNum, bNum, cNum);
+const descr = findingDescr(aNum, bNum, cNum);
  if (descr === 0) {
   const xSingle = ((-bNum + Math.sqrt(descr)) / (2 * aNum));
   return xSingle;
