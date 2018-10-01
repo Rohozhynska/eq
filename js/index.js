@@ -8,7 +8,7 @@ function findingDescr(aNum, bNum, cNum) {
 let descr = findingDescr(aNum, bNum, cNum);
 
 function solvEq(bNum, descr, aNum) {
- if (descr == 0) {
+ if (descr === 0) {
   const xSingle = ((-bNum + Math.sqrt(descr)) / (2 * aNum));
   return xSingle;
  }
