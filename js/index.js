@@ -1,6 +1,3 @@
-const aNum = prompt('Enter a');
-const bNum = prompt('Enter b');
-const cNum = prompt('Enter c');
 
 function solvEq(bNum, aNum) {
 const descr = findingDescr(aNum, bNum, cNum);
@@ -21,5 +18,8 @@ const descr = findingDescr(aNum, bNum, cNum);
 function findingDescr(aNum, bNum, cNum) {
  return bNum * bNum - 4 * aNum * cNum;
 }
+const aNum = prompt('Enter a');
+const bNum = prompt('Enter b');
+const cNum = prompt('Enter c');
 let res = solvEq(bNum, aNum);
 alert(res);
